@@ -1,0 +1,19 @@
+Website E-Jurnal :
+
+Gambaran umum :
+	1. Upload E-Jurnal
+	2. Download E-Jurnal
+	3. Register/Login E-Jurnal
+
+Tampilan Utama	: Menampilkan jurnal yang sudah di upload, bisa pilih berdasarkan:
+	 tahun -> volume (dalam satu tahun ada beberapa volume/masa terbit jurnal)
+
+Tampilan Register :
+Tampilan Login: (lagi dibuat)
+Tampilan Beranda(Upload Jurnal):
+
+Untuk sekarang itu bae dlu,
+Database sudah di buat rahmat. 
+Bahasa yang dipakek bahasa PHP dan Pakek Framework CODEIGNETER
+
+yang dikejer pertama Tampilan Utama dlu be	
