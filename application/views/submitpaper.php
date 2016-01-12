@@ -1,4 +1,5 @@
 <center>
+        <form method="post" action="<?php echo site_url('submitpaper/do_upload'); ?>" enctype="multipart/form-data">
         <table ><!--tabel besak-->
             <tr >
               <td style="width:7.4%">
@@ -13,7 +14,7 @@
                           <td >
                             <div class="input-group" style="width:100%">
                               <span class="input-group-addon glyphicon glyphicon-user" id="basic-addon1"></span>
-                              <input type="text" class="form-control" placeholder="Name" aria-describedby="basic-addon1" >
+                              <input type="text" name="name" class="form-control" placeholder="Name" aria-describedby="basic-addon1" >
                             </div>
                           </td>
                         </tr>
@@ -21,7 +22,7 @@
                           <td>
                               <div class="input-group" style="width:100%">
                               <span class="input-group-addon " id="basic-addon1">@</span>
-                              <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1" >
+                              <input type="email" name="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1" >
                               </div>
                           </td>
                         </tr>
@@ -29,7 +30,7 @@
                           <td>
                               <div class="input-group" style="width:100%">
                               <span class="input-group-addon glyphicon glyphicon-envelope" id="basic-addon1"></span>
-                              <input type="text" class="form-control" placeholder="Postal Addres" aria-describedby="basic-addon1" >
+                              <input type="text" class="form-control" name="address" placeholder="Postal Addres" aria-describedby="basic-addon1" >
                               </div>
                           </td>
                         </tr>
@@ -37,34 +38,35 @@
                           <td>
                               <div class="input-group" style="width:100%">
                               <span class="input-group-addon glyphicon glyphicon glyphicon-earphone" id="basic-addon1"></span>
-                              <input type="text" class="form-control" placeholder="Phone" aria-describedby="basic-addon1" >
+                              <input type="text" class="form-control" name="phone" placeholder="Phone" aria-describedby="basic-addon1" >
                               </div>
                           </td>
                         </tr>
                         <tr>
                           <td>
                               <label class="btn btn-primary" for="my-file-selector">
-                              <input id="my-file-selector" type="file" style="display:none;"><span class="glyphicon glyphicon-upload">
+                              <input id="my-file-selector" name="file" type="file" style="display:none;"><span class="glyphicon glyphicon-upload">
                               </span>&nbspUpload File 
-                              </label> hahaha.pdf
+                              </label> <label name="filename">.pdf</label>
                           </td>
                         </tr>       
                         <tr>
                           <td >
                           <div class="form-group">
                             <label for="comment" align="left">Description:</label>
-                            <textarea class="form-control" rows="5" id="comment" ></textarea>
+                            <textarea name="description" class="form-control" rows="5" id="comment" ></textarea>
                           </div>
                         </td>
                        </tr>
         
                        <tr>
                         <td> 
-                          <button type="submit" class="btn btn-default">Submit</button>
+                          <input type="submit" name="upload" class="btn btn-default" value="Submit"></input>
                         </td>
                        </tr>
 
                     </table><!--tabel kiri-->
+                  </form>
                   </div>
                 </div>
               </td><!--tabel kiri-->
